@@ -6,4 +6,5 @@ Must have GNUPLOT installed \
 Tested on gfortran compiler \
 1)1D Linear Convection \
 2)1D Non Linear Convection \
-3)1D Diffusion Equation
+3)1D Diffusion Equation \
+4)Burger's Equation (PS: May have some issues)
