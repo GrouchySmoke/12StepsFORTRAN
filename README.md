@@ -9,3 +9,4 @@ Tested on gfortran compiler \
 3)1D Diffusion Equation \
 4)Burger's Equation (PS: May have some issues)\
 5)2D Linear Convection\
+6)2D Non Linear Convection\
