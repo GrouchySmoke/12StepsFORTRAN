@@ -98,21 +98,24 @@ write(4,*)'set ylabel "Y dimension"'
 write(4,*)'set zlabel "Value of velocity"'
 write(4,*)'set title "At time=0"'
 write(4,*)'set hidden3d'
-write(4,*)'splot "attzero.dat"'
+write(4,*)'set dgrid3d 50,50 qnorm 2' 
+write(4,*)'splot "attzero.dat" with lines'
 CALL SYSTEM('gnuplot -p attzero.plt')
 write(5,*)'set xlabel "X dimension"'
 write(5,*)'set ylabel "Y dimesion"'
 write(5,*)'set zlabel "Value of u velocity"'
 write(5,*)'set title "At time=final"'
 write(5,*)'set hidden3d'
-write(5,*)'splot "attfinalu.dat"'
+write(5,*)'set dgrid3d 50,50 qnorm 2' 
+write(5,*)'splot "attfinalu.dat" with lines'
 CALL SYSTEM('gnuplot -p attfinalu.plt')
 write(6,*)'set xlabel "X dimension"'
 write(6,*)'set ylabel "Y dimesion"'
 write(6,*)'set zlabel "Value of v velocity"'
 write(6,*)'set title "At time=final"'
 write(6,*)'set hidden3d'
-write(6,*)'splot "attfinalv.dat"'
+write(6,*)'set dgrid3d 50,50 qnorm 2' 
+write(6,*)'splot "attfinalv.dat" with lines'
 CALL SYSTEM('gnuplot -p attfinalv.plt')
 close(1)
 close(2)
