@@ -11,3 +11,5 @@ Tested on gfortran compiler \
 5)2D Linear Convection\
 6)2D Non Linear Convection\
 7)2D diffusion(somewhat broken)\
+8)2D Burgers(skipped)\
+9)
